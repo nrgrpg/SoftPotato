@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Soft Potato</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QWidget" name="widget_2" native="true"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QWidget" name="widget" native="true"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QWidget" name="widget_3" native="true"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QWidget" name="widget_4" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMain">
+    <property name="title">
+     <string>Main</string>
+    </property>
+    <addaction name="actionReset"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuTechnique">
+    <property name="title">
+     <string>Technique</string>
+    </property>
+    <addaction name="actionChronoamperometry"/>
+    <addaction name="actionLinear_sweep_voltammetry"/>
+    <addaction name="actionCyclic_voltammetry"/>
+    <addaction name="actionSampled_current_voltammetry"/>
+    <addaction name="actionCustom"/>
+   </widget>
+   <widget class="QMenu" name="menuMechanism">
+    <property name="title">
+     <string>Mechanism</string>
+    </property>
+    <widget class="QMenu" name="menuDiffusion">
+     <property name="title">
+      <string>Diffusion</string>
+     </property>
+     <addaction name="actionE_2"/>
+     <addaction name="actionEC"/>
+    </widget>
+    <widget class="QMenu" name="menuAdsorption">
+     <property name="title">
+      <string>Adsorption</string>
+     </property>
+     <addaction name="actionSurface_bound"/>
+     <addaction name="actionLangmuir"/>
+    </widget>
+    <addaction name="menuDiffusion"/>
+    <addaction name="menuAdsorption"/>
+   </widget>
+   <widget class="QMenu" name="menuAlgorithm">
+    <property name="title">
+     <string>Algorithm</string>
+    </property>
+    <addaction name="actionExplicit_finite_differences_EFD"/>
+    <addaction name="actionBackwards_implicit_BI"/>
+   </widget>
+   <addaction name="menuMain"/>
+   <addaction name="menuTechnique"/>
+   <addaction name="menuMechanism"/>
+   <addaction name="menuAlgorithm"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionReset">
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionChronoamperometry">
+   <property name="text">
+    <string>Chronoamperometry (CA)</string>
+   </property>
+  </action>
+  <action name="actionLinear_sweep_voltammetry">
+   <property name="text">
+    <string>Linear sweep voltammetry (LSV)</string>
+   </property>
+  </action>
+  <action name="actionCyclic_voltammetry">
+   <property name="text">
+    <string>Cyclic voltammetry (CV)</string>
+   </property>
+  </action>
+  <action name="actionSampled_current_voltammetry">
+   <property name="text">
+    <string>Sampled current voltammetry (SCV)</string>
+   </property>
+  </action>
+  <action name="actionCustom">
+   <property name="text">
+    <string>Custom</string>
+   </property>
+  </action>
+  <action name="actionE_2">
+   <property name="text">
+    <string>E</string>
+   </property>
+  </action>
+  <action name="actionEC">
+   <property name="text">
+    <string>EC</string>
+   </property>
+  </action>
+  <action name="actionSurface_bound">
+   <property name="text">
+    <string>Surface bound</string>
+   </property>
+  </action>
+  <action name="actionLangmuir">
+   <property name="text">
+    <string>Langmuir</string>
+   </property>
+  </action>
+  <action name="actionExplicit_finite_differences_EFD">
+   <property name="text">
+    <string>Explicit finite differences (EFD)</string>
+   </property>
+  </action>
+  <action name="actionBackwards_implicit_BI">
+   <property name="text">
+    <string>Backwards implicit (BI)</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
